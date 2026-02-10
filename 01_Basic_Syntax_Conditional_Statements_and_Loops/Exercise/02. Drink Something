@@ -1,0 +1,11 @@
+ages = int(input())
+drinks = ""
+if ages <= 14:
+    drinks = "toddy"
+elif ages <= 18:
+    drinks = "coke"
+elif ages <= 21:
+    drinks = "beer"
+else:
+    drinks = "whisky"
+print(f"drink {drinks}")
