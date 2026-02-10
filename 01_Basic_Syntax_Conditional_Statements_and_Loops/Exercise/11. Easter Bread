@@ -1,0 +1,20 @@
+budget = float(input())
+price_float = float(input())
+
+price_eggs = 0.75 * price_float
+price_milk_liter = 1.25 * price_float
+milk_needed = 0.25
+
+loaf_price = price_float + price_eggs + price_milk_liter * milk_needed
+loaves = 0
+eggs = 0
+
+while budget >= loaf_price:
+    budget -= loaf_price
+    eggs += 3
+    loaves += 1
+
+    if loaves % 3 == 0:
+        eggs -= (loaves - 2)
+
+print(f"You made {loaves} loaves of Easter bread! Now you have {eggs} eggs and {budget:.2f}BGN left.")
