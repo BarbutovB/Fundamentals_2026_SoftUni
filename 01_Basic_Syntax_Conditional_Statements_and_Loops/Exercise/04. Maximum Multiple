@@ -1,0 +1,6 @@
+divisor = int(input())
+bound = int(input())
+
+result = (bound // divisor) * divisor
+
+print(result)
