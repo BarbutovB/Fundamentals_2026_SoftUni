@@ -1,0 +1,10 @@
+while True:
+    current_text = input()
+    if current_text == "End":
+        break
+    if current_text != "SoftUni":
+        new_text = ""
+        for character in current_text:
+            new_text += character * 2
+        print(new_text)
+
