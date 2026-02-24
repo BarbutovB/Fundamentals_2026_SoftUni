@@ -1,0 +1,14 @@
+data = input().split()
+search_products = input().split()
+stock = {}
+
+for i in range(0, len(data), 2):
+    product = data[i]
+    quantity = int(data[i + 1])
+    stock[product] = quantity
+
+for item in search_products:
+    if item in stock:
+        print(f"We have {stock[item]} of {item} left")
+    else:
+        print(f"Sorry, we don't have {item}")
