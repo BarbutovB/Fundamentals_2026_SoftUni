@@ -1,4 +1,4 @@
-ome_string = input()
+some_string = input()
 final_string = ""
 strength = 0
 for index in range(len(some_string)):
